@@ -1,0 +1,3 @@
+post-build=google/shamu/shamu:6.0.1/MOB31K/3342486:user/release-keys
+post-timestamp=1476230394
+pre-device=shamu

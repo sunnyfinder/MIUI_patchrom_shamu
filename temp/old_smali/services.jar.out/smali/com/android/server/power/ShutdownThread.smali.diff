@@ -1,0 +1,21 @@
+*** ./smali/com/android/server/power/ShutdownThread.smali	2016-11-14 15:15:07.547712600 +0800
+--- /media/finder/Seagate/patchrom/shamu_new/temp/new_smali/services.jar.out/./smali/com/android/server/power/ShutdownThread.smali	2016-11-14 15:09:35.660137300 +0800
+***************
+*** 312,318 ****
+  
+      invoke-virtual {v2, v3}, Landroid/view/Window;->setType(I)V
+  
+!     invoke-virtual {v1}, Landroid/app/ProgressDialog;->show()V
+  
+      sget-object v2, Lcom/android/server/power/ShutdownThread;->sInstance:Lcom/android/server/power/ShutdownThread;
+  
+--- 312,320 ----
+  
+      invoke-virtual {v2, v3}, Landroid/view/Window;->setType(I)V
+  
+!     sget-boolean v3, Lcom/android/server/power/ShutdownThread;->mReboot:Z
+! 
+!     invoke-static {p0, v3}, Lcom/android/server/power/ShutdownThreadInjector;->showShutdownDialog(Landroid/content/Context;Z)V
+  
+      sget-object v2, Lcom/android/server/power/ShutdownThread;->sInstance:Lcom/android/server/power/ShutdownThread;
+  

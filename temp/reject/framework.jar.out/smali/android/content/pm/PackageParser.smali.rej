@@ -1,0 +1,19 @@
+*** PackageParser.smali	2016-11-14 15:11:09.100996100 +0800
+--- PackageParser.smali	2016-11-14 15:05:48.221092500 +0800
+***************
+*** 9660,9666 ****
+  
+      .local v28, "parser":Landroid/content/res/XmlResourceParser;
+      :try_start_0
+!     new-instance v31, Landroid/content/res/Resources;
+  
+      move-object/from16 v0, p0
+  
+--- 9660,9666 ----
+  
+      .local v28, "parser":Landroid/content/res/XmlResourceParser;
+      :try_start_0
+!     new-instance v31, Landroid/content/res/MiuiResources;
+  
+      move-object/from16 v0, p0
+  

@@ -1,0 +1,36 @@
+*** ./smali/android/content/pm/PackageParser.smali	2016-11-14 15:11:09.100996100 +0800
+--- /media/finder/Seagate/patchrom/shamu_new/temp/new_smali/framework.jar.out/./smali/android/content/pm/PackageParser.smali	2016-11-14 15:05:48.221092500 +0800
+***************
+*** 9660,9666 ****
+  
+      .local v28, "parser":Landroid/content/res/XmlResourceParser;
+      :try_start_0
+!     new-instance v31, Landroid/content/res/Resources;
+  
+      move-object/from16 v0, p0
+  
+--- 9660,9666 ----
+  
+      .local v28, "parser":Landroid/content/res/XmlResourceParser;
+      :try_start_0
+!     new-instance v31, Landroid/content/res/MiuiResources;
+  
+      move-object/from16 v0, p0
+  
+***************
+*** 9672,9678 ****
+  
+      move-object/from16 v1, p2
+  
+!     invoke-direct {v0, v1, v5, v6}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
+      :try_end_0
+      .catch Landroid/content/pm/PackageParser$PackageParserException; {:try_start_0 .. :try_end_0} :catch_3
+      .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+--- 9672,9678 ----
+  
+      move-object/from16 v1, p2
+  
+!     invoke-direct {v0, v1, v5, v6}, Landroid/content/res/MiuiResources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
+      :try_end_0
+      .catch Landroid/content/pm/PackageParser$PackageParserException; {:try_start_0 .. :try_end_0} :catch_3
+      .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1

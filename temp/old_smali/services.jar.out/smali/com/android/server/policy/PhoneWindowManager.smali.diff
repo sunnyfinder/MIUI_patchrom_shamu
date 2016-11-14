@@ -1,0 +1,19 @@
+*** ./smali/com/android/server/policy/PhoneWindowManager.smali	2016-11-14 15:15:05.935862600 +0800
+--- /media/finder/Seagate/patchrom/shamu_new/temp/new_smali/services.jar.out/./smali/com/android/server/policy/PhoneWindowManager.smali	2016-11-14 15:09:34.058510900 +0800
+***************
+*** 463,469 ****
+  
+  .field mLidState:I
+  
+! .field private final mLock:Ljava/lang/Object;
+  
+  .field mLockScreenTimeout:I
+  
+--- 463,469 ----
+  
+  .field mLidState:I
+  
+! .field final mLock:Ljava/lang/Object;
+  
+  .field mLockScreenTimeout:I
+  

@@ -1,0 +1,19 @@
+*** ./smali/android/graphics/Bitmap.smali	2016-11-14 15:11:17.776711500 +0800
+--- /media/finder/Seagate/patchrom/shamu_new/temp/new_smali/framework.jar.out/./smali/android/graphics/Bitmap.smali	2016-11-14 15:05:56.349662500 +0800
+***************
+*** 41,47 ****
+  
+  
+  # instance fields
+! .field private mBuffer:[B
+  
+  .field mDensity:I
+  
+--- 41,47 ----
+  
+  
+  # instance fields
+! .field public mBuffer:[B
+  
+  .field mDensity:I
+  

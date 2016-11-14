@@ -1,0 +1,13 @@
+*** ./smali/com/android/internal/os/ZygoteInit.smali	2016-11-14 15:13:54.128967900 +0800
+--- /media/finder/Seagate/patchrom/shamu_new/temp/new_smali/framework.jar.out/./smali/com/android/internal/os/ZygoteInit.smali	2016-11-14 15:08:27.532261600 +0800
+***************
+*** 347,352 ****
+--- 347,354 ----
+  
+      invoke-static {}, Lcom/android/internal/os/SamplingProfilerIntegration;->start()V
+  
++     invoke-static {}, Lmiui/patchrom/ClassHook;->initCoreHook()V
++ 
+      const/4 v5, 0x0
+  
+      .local v5, "startSystemServer":Z
