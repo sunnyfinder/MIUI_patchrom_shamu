@@ -21,7 +21,7 @@ Based on the newset stock image:6.0.1(MOB31K)
 
 8.Added native root.
 
-Caution:There are something wrong with smails, so it can not boot normally after building(make fullota).
+Caution:There is something wrong with smails, so it can not boot normally after building(make fullota).
 
 # Instruction:
 
