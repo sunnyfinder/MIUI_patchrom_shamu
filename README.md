@@ -1,7 +1,7 @@
 # MIUI_patchrom_shamu
 All the stuffs related to miui porting device Nexus 6
 
-Based on the newset stock image:6.0.1(MOB31K)
+Based on the latest stock image:6.0.1(MOB31K)
 
 # About:
 
